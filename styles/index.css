@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300&family=Montserrat:wght@700&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -40,4 +42,63 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.component__container {
+  background-color: #f6f0e8;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.component__container .component__box {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1rem;
+  width: 50%;
+}
+.component__container img {
+  max-width: 100%;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+.component__container .component__text {
+  text-align: center;
+  margin: auto;
+}
+.component__container .component__text h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #123359;
+  font-size: 3rem;
+  text-align: start;
+}
+.component__container .component__text h3 {
+  font-family: "Fraunces", serif;
+  color: rgba(23, 23, 23, 0.7450980392);
+}
+.component__container .component__text p {
+  font-family: "Fraunces", serif;
+  font-size: 1.1rem;
+  text-align: left;
+  margin: 1rem 0rem 0rem 0rem;
+}
+.component__container .component__text .component__price {
+  display: flex;
+  margin: 3rem 0rem 0rem 0rem;
+  flex-direction: row;
+  justify-content: center;
+}
+.component__container .component__text .component__price p {
+  color: black;
+  font-size: 2rem;
+}
+.component__container .component__text button {
+  margin-top: 50px;
+  width: 50%;
+  height: 30%;
+  font-size: "Montserrat", sans-serif;
 }/*# sourceMappingURL=index.css.map */

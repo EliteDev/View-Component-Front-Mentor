@@ -1,0 +1,58 @@
+.component__container {
+  background-color: $color-cream;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  .component__box {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 1rem;
+    width: 50%;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 1rem 0rem 0rem 1rem;
+  }
+  .component__text {
+    text-align: center;
+    margin: auto;
+    h2 {
+      font-family: $font-primary;
+      color: $color-darkBlue;
+      font-size: 3rem;
+      text-align: start;
+    }
+    h3 {
+      font-family: $font-secondary;
+      color: $color-black;
+    }
+    p {
+      font-family: $font-secondary;
+      font-size: 1.1rem;
+      text-align: left;
+      margin: 1rem 0rem 0rem 0rem;
+    }
+    .component__price {
+      display: flex;
+      margin: 3rem 0rem 0rem 0rem;
+      flex-direction: row;
+      justify-content: center;
+      p {
+        color: black;
+        font-size: 2rem;
+      }
+    }
+    button{
+        margin-top: 50px;
+        width: 50%;
+        height: 30%;
+        font-size: $font-primary; 
+    }
+  }
+}
